@@ -54,17 +54,23 @@
       };
       if (!barry) { fin(); return; }
       barry.requires = null;
-      var px = Math.round(ow.player.x), py = Math.round(ow.player.y);
       function rep(c, n) { var s = ''; while (n-- > 0) s += c; return s; }
-      var approach = rep('u', Math.max(0, 5 - py)) + rep('l', Math.max(0, 14 - (px + 1)));
+      // Barry starts at (14,5), under his house. The houses block columns 3-6 and
+      // 13-16 (rows 2-4); the only clear vertical corridor is the gap at columns
+      // 7-12, and the town's north exit is columns 10-11. Route him along the open
+      // street (row 5) into that gap, up beside the player, and out the gap - so he
+      // never walks through his own roof.
+      var px = Math.round(ow.player.x);
+      var stopX = Math.max(8, Math.min(11, px - 1));   // land just left of the player, inside the gap
       D.say('{RIVAL}: WAIT! {PLAYER}!', function () {
+        var approach = rep('l', 14 - stopX) + rep('u', 4);   // (14,5) -> (stopX,5) -> (stopX,1)
         E.moveNpc(barry, approach, function () {
-          barry.dir = 'left';
+          barry.dir = 'right';
           D.say(['{RIVAL}: I saw it on TV! A red Gyarados! If something that rare is real, our lake HAS to have something in it too!',
             '{RIVAL}: Lake Verity! First one there owes the other a million bucks - GO!'], function () {
-            var bx = px + 1;
-            var exit = (bx < 11 ? rep('r', 11 - bx) : rep('l', bx - 11)) + rep('u', py);
-            E.moveNpc(barry, exit + 'u', fin);
+            var exitCol = 10;                                 // north exit gap is columns 10-11
+            var exit = (stopX < exitCol ? rep('r', exitCol - stopX) : rep('l', stopX - exitCol)) + 'uu';
+            E.moveNpc(barry, exit, fin);
           });
         });
       });
