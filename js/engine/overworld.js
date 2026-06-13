@@ -17,10 +17,19 @@ PKM.Overworld = (function () {
     return ow.map.tiles[y][x] || ' ';
   }
 
+  /* an NPC only exists for the world (collision + interaction) when it is
+     actually visible - mirrors the draw filter, so a hidden cutscene NPC like
+     pre-event Barry doesn't leave an invisible wall in front of his door. */
+  function npcActive(n) {
+    if (n.gone) return false;
+    if (n.requires && !PKM.State.flag(n.requires)) return false;
+    if (n.hidden && PKM.State.flag(n.hidden)) return false;
+    return true;
+  }
   function npcAt(x, y) {
     for (var i = 0; i < ow.npcs.length; i++) {
       var n = ow.npcs[i];
-      if (!n.gone && Math.round(n.x) === x && Math.round(n.y) === y) return n;
+      if (npcActive(n) && Math.round(n.x) === x && Math.round(n.y) === y) return n;
     }
     return null;
   }
@@ -47,8 +56,8 @@ PKM.Overworld = (function () {
     var ch = tileAt(x, y);
     if (ch === null) return false;
     if (npcAt(x, y)) return false;
-    if (!asNpc && playerAt(x, y)) return false;
-    if (asNpc && playerAt(x, y)) return false;
+    if (playerAt(x, y)) return false;
+    if (itemAt(x, y)) return false;   // ground items are solid; collect by facing + pressing A
     if (WALKABLE[ch]) return true;
     if (asNpc) return false;
     if (ch === '~') return ow.player.surfing || PKM.State.canUseField('surf');
