@@ -1,0 +1,15 @@
+html, body {
+  margin: 0; padding: 0; background: #0b0c10; height: 100%;
+  display: flex; align-items: center; justify-content: center;
+  overflow: hidden; font-family: Consolas, monospace;
+}
+#wrap { position: relative; }
+canvas#game {
+  display: block; background: #000;
+  image-rendering: pixelated; image-rendering: crisp-edges;
+  max-width: 100vw; max-height: 100vh;
+}
+#hint {
+  position: absolute; left: 0; right: 0; bottom: -26px; text-align: center;
+  color: #4d5566; font-size: 12px; letter-spacing: .5px; user-select: none;
+}
