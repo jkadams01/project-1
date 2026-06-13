@@ -1,0 +1,178 @@
+{
+ "route202": [
+  "route202_t1",
+  "route202_t2"
+ ],
+ "route203": [
+  "route203_t1",
+  "route203_t2",
+  "route203_t3"
+ ],
+ "route204": [
+  "route204_t1",
+  "route204_t2"
+ ],
+ "route205south": [
+  "route205south_t1",
+  "route205south_t2"
+ ],
+ "eterna_forest": [
+  "eterna_forest_t1",
+  "eterna_forest_t2"
+ ],
+ "route205north": [
+  "route205north_t1"
+ ],
+ "route206": [
+  "route206_t1",
+  "route206_t2"
+ ],
+ "route207": [
+  "route207_t1",
+  "route207_t2"
+ ],
+ "route208": [
+  "route208_t1",
+  "route208_t2",
+  "route208_t3"
+ ],
+ "route209": [
+  "route209_t1",
+  "route209_t2",
+  "route209_t3"
+ ],
+ "route210south": [
+  "route210south_t1",
+  "route210south_t2",
+  "route210south_t3"
+ ],
+ "route215": [
+  "route215_t1",
+  "route215_t2",
+  "route215_t3"
+ ],
+ "route214": [
+  "route214_t1",
+  "route214_t2",
+  "route214_t3"
+ ],
+ "route213": [
+  "route213_t1",
+  "route213_t2",
+  "route213_t3"
+ ],
+ "route212south": [
+  "route212south_t1",
+  "route212south_t2"
+ ],
+ "route212north": [
+  "route212north_t1",
+  "route212north_t2"
+ ],
+ "route210north": [
+  "route210north_t1",
+  "route210north_t2"
+ ],
+ "route211": [
+  "route211_t1",
+  "route211_t2"
+ ],
+ "route218": [
+  "route218_t1",
+  "route218_t2"
+ ],
+ "route216": [
+  "route216_t1",
+  "route216_t2"
+ ],
+ "route217": [
+  "route217_t1",
+  "route217_t2",
+  "route217_t3"
+ ],
+ "route222": [
+  "route222_t1",
+  "route222_t2",
+  "route222_t3"
+ ],
+ "route223": [
+  "route223_t1",
+  "route223_t2"
+ ],
+ "victory_road": [
+  "victory_road_t1",
+  "victory_road_t2",
+  "victory_road_t3"
+ ],
+ "iron_island": [
+  "iron_island_t1",
+  "iron_island_t2"
+ ],
+ "route225": [
+  "route225_t1",
+  "route225_t2"
+ ],
+ "stark_mountain": [
+  "stark_mountain_t1",
+  "stark_mountain_t2"
+ ],
+ "oreburgh_gym": [
+  "oreburgh_gym_t1",
+  "oreburgh_gym_t2"
+ ],
+ "eterna_gym": [
+  "eterna_gym_t1",
+  "eterna_gym_t2"
+ ],
+ "hearthome_gym": [
+  "hearthome_gym_t1",
+  "hearthome_gym_t2"
+ ],
+ "veilstone_gym": [
+  "veilstone_gym_t1",
+  "veilstone_gym_t2"
+ ],
+ "pastoria_gym": [
+  "pastoria_gym_t1",
+  "pastoria_gym_t2"
+ ],
+ "canalave_gym": [
+  "canalave_gym_t1",
+  "canalave_gym_t2"
+ ],
+ "snowpoint_gym": [
+  "snowpoint_gym_t1",
+  "snowpoint_gym_t2"
+ ],
+ "sunyshore_gym": [
+  "sunyshore_gym_t1",
+  "sunyshore_gym_t2"
+ ],
+ "windworks": [
+  "windworks_t1",
+  "windworks_t2"
+ ],
+ "eterna_bldg": [
+  "eterna_bldg_t1",
+  "eterna_bldg_t2",
+  "eterna_bldg_t3"
+ ],
+ "galactic_hq": [
+  "galactic_hq_t1",
+  "galactic_hq_t2",
+  "galactic_hq_t3",
+  "galactic_hq_t4"
+ ],
+ "coronet_climb": [
+  "coronet_climb_t1",
+  "coronet_climb_t2"
+ ],
+ "lake_valor_ev": [
+  "lake_valor_ev_t1",
+  "lake_valor_ev_t2"
+ ],
+ "lake_verity_ev": [
+  "lake_verity_ev_t1",
+  "lake_verity_ev_t2"
+ ]
+}
