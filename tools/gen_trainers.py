@@ -31,63 +31,63 @@ def m(pid, lv, item=None):
     return d
 
 # --------------------------------- bosses ---------------------------------
-trainer('roark', 'Roark', 'Leader', 'leader', [m(74, 12), m(95, 12), m(408, 14, 'oran-berry')], 120, 'leader',
+trainer('roark', 'Roark', 'Leader', 'leader', [m(74, 12), m(95, 12), m(246, 12), m(299, 13), m(688, 13), m(408, 14, 'oran-berry')], 120, 'leader',
         intro='Roark: I\'m Roark, and these fossils aren\'t the only hard-headed things in this Gym. Show me what you\'ve got!',
         lose='W-what? My Cranidos! ...You\'ve earned this, fair and square.')
-trainer('gardenia', 'Gardenia', 'Leader', 'leader', [m(387, 20), m(421, 20), m(407, 22, 'sitrus-berry')], 120, 'leader',
+trainer('gardenia', 'Gardenia', 'Leader', 'leader', [m(387, 20), m(421, 20), m(357, 20), m(470, 21), m(549, 21), m(407, 22, 'sitrus-berry')], 120, 'leader',
         intro='Gardenia: The Eterna Gym is one big garden - and everything in it bites! Let\'s dance!',
         lose='Amazing! You and your Pokemon move like you share one mind.')
-trainer('fantina', 'Fantina', 'Leader', 'commander', [m(355, 24), m(93, 24), m(429, 26, 'sitrus-berry')], 120, 'leader',
+trainer('fantina', 'Fantina', 'Leader', 'commander', [m(355, 24), m(93, 24), m(354, 24), m(442, 25), m(778, 25), m(429, 26, 'sitrus-berry')], 120, 'leader',
         intro='Fantina: Bienvenue! In this Gym, what you cannot see CAN hurt you. Magnifique, non?',
         lose='Merveilleux! Your style, your courage - I am charmed!')
-trainer('maylene', 'Maylene', 'Leader', 'ace', [m(307, 28), m(67, 29), m(448, 32, 'sitrus-berry')], 120, 'leader',
+trainer('maylene', 'Maylene', 'Leader', 'ace', [m(307, 28), m(67, 29), m(286, 29), m(619, 30), m(534, 30), m(448, 32, 'sitrus-berry')], 120, 'leader',
         intro='Maylene: I train barefoot so I never forget the basics. Footwork first - now, fight!',
         lose='...A clean hit. My Lucario respects you. So do I.')
-trainer('wake', 'Crasher Wake', 'Leader', 'swimmer', [m(130, 33), m(195, 34), m(419, 37, 'sitrus-berry')], 120, 'leader',
+trainer('wake', 'Crasher Wake', 'Leader', 'swimmer', [m(130, 33), m(195, 34), m(131, 34), m(260, 35), m(503, 35), m(419, 37, 'sitrus-berry')], 120, 'leader',
         intro='Crasher Wake: WAVES CRASH! So do I! CRASHER WAKE makes landfall!',
         lose='GWAHAHA! Beaten like a drum! You\'re a tidal wave yourself, kid!')
-trainer('byron', 'Byron', 'Leader', 'hiker', [m(82, 37), m(208, 38), m(411, 41, 'sitrus-berry')], 120, 'leader',
+trainer('byron', 'Byron', 'Leader', 'hiker', [m(82, 37), m(208, 38), m(530, 38), m(625, 39), m(376, 40), m(411, 41, 'sitrus-berry')], 120, 'leader',
         intro='Byron: Steel! It shelters us, it arms us, it OUTLASTS us! Can you dent it?',
         lose='A fine swing! My son chose a good rival in you.')
-trainer('candice', 'Candice', 'Leader', 'skier', [m(215, 40), m(221, 40), m(460, 42), m(478, 44, 'sitrus-berry')], 120, 'leader',
+trainer('candice', 'Candice', 'Leader', 'skier', [m(215, 40), m(221, 40), m(471, 41), m(614, 42), m(460, 42), m(478, 44, 'sitrus-berry')], 120, 'leader',
         intro='Candice: I\'m Candice, and my focus is razor sharp! Hope you don\'t get cold feet!',
         lose='Brrr-illiant! You melted my whole strategy!')
-trainer('volkner', 'Volkner', 'Leader', 'ace', [m(135, 46), m(26, 46), m(405, 48), m(466, 50, 'sitrus-berry')], 120, 'leader',
+trainer('volkner', 'Volkner', 'Leader', 'ace', [m(135, 46), m(26, 46), m(405, 48), m(462, 48), m(738, 49), m(466, 50, 'sitrus-berry')], 120, 'leader',
         intro='Volkner: ...You\'re the one everyone\'s talking about? Fine. Recharge my passion for battle - full voltage!',
         lose='Ha... haha! THERE it is! That spark! Thank you for this.')
-trainer('aaron', 'Aaron', 'Elite Four', 'ace', [m(469, 49), m(212, 49), m(416, 50), m(214, 51), m(452, 53, 'sitrus-berry')], 200, 'leader',
+trainer('aaron', 'Aaron', 'Elite Four', 'ace', [m(469, 49), m(212, 49), m(416, 50), m(214, 51), m(637, 52), m(452, 53, 'sitrus-berry')], 200, 'leader',
         intro='Aaron: Bug Pokemon are beautiful - efficient, elegant, utterly ruthless. Like me!',
         lose='So strong... and so beautiful a battle.')
-trainer('bertha', 'Bertha', 'Elite Four', 'elder', [m(340, 50), m(472, 53), m(450, 52), m(76, 52), m(464, 55, 'sitrus-berry')], 200, 'leader',
+trainer('bertha', 'Bertha', 'Elite Four', 'elder', [m(340, 50), m(76, 52), m(450, 52), m(472, 53), m(530, 53), m(464, 55, 'sitrus-berry')], 200, 'leader',
         intro='Bertha: Oh my, what a youthful aura. Let this old lady show you how the ground itself fights back.',
         lose='Hohoho! Splendid! You hit harder than time itself.')
-trainer('flint', 'Flint', 'Elite Four', 'ace', [m(229, 52), m(136, 55), m(78, 53), m(392, 55), m(467, 57, 'sitrus-berry')], 200, 'leader',
+trainer('flint', 'Flint', 'Elite Four', 'ace', [m(136, 52), m(78, 53), m(229, 53), m(257, 55), m(392, 55), m(467, 57, 'sitrus-berry')], 200, 'leader',
         intro='Flint: My buddy Volkner sent word about you! Let\'s burn this place down - figuratively! Mostly!',
         lose='BURNT OUT! That fire of yours is the real deal.')
-trainer('lucian', 'Lucian', 'Elite Four', 'scientist', [m(122, 53), m(196, 55), m(437, 54), m(65, 56), m(475, 59, 'sitrus-berry')], 200, 'leader',
+trainer('lucian', 'Lucian', 'Elite Four', 'scientist', [m(122, 53), m(437, 54), m(196, 55), m(282, 56), m(65, 56), m(475, 59, 'sitrus-berry')], 200, 'leader',
         intro='Lucian: I was just at the best part of my book... but a mind is sharpened by interruption. En garde.',
         lose='...Checkmate, and not in my favor. Masterfully played.')
 trainer('cynthia', 'Cynthia', 'Champion', 'cynthia', [m(442, 58), m(407, 58), m(468, 60), m(448, 60, 'sitrus-berry'), m(350, 58), m(445, 62, 'sitrus-berry')], 300, 'champion',
         intro='Cynthia: Every Trainer who stands here has a story. Lakes, legends, a team that tried to unmake the world... Show me how yours ends - with everything you have!',
         lose='...Magnificent. The title of Champion is yours. Wear it the way you earned it - kindly.')
 
-trainer('mars1', 'Mars', 'Galactic Commander', 'commander', [m(41, 15), m(432, 17, 'oran-berry')], 160, 'galactic', ai='good',
+trainer('mars1', 'Mars', 'Galactic Commander', 'commander', [m(41, 15), m(434, 15), m(396, 15), m(19, 16), m(261, 16), m(432, 17, 'oran-berry')], 160, 'galactic', ai='good',
         intro='Mars: Team Galactic is building a better universe. You\'re standing in the construction zone, kid.',
         lose='Tch. Noted. You\'re a variable now.')
-trainer('jupiter1', 'Jupiter', 'Galactic Commander', 'commander', [m(41, 18), m(435, 20, 'oran-berry')], 160, 'galactic', ai='good',
+trainer('jupiter1', 'Jupiter', 'Galactic Commander', 'commander', [m(41, 18), m(42, 18), m(434, 18), m(198, 19), m(559, 19), m(435, 20, 'oran-berry')], 160, 'galactic', ai='good',
         intro='Jupiter: The bikes, the building, the whole city - all of it is fuel for something greater. Move along... or don\'t.',
         lose='Hmph. Enjoy the small victory. It changes nothing.')
-trainer('saturn1', 'Saturn', 'Galactic Commander', 'commander', [m(42, 38), m(436, 38), m(454, 40, 'sitrus-berry')], 160, 'galactic', ai='good',
+trainer('saturn1', 'Saturn', 'Galactic Commander', 'commander', [m(42, 38), m(436, 38), m(169, 39), m(437, 39), m(625, 39), m(454, 40, 'sitrus-berry')], 160, 'galactic', ai='good',
         intro='Saturn: You walked INTO our headquarters? I almost respect that. Almost.',
         lose='...The boss won\'t care. He\'s already past the point of caring about anything.')
-trainer('cyrus1', 'Cyrus', 'Galactic Boss', 'boss', [m(215, 34), m(169, 34), m(198, 34)], 200, 'galactic', ai='good',
+trainer('cyrus1', 'Cyrus', 'Galactic Boss', 'boss', [m(215, 34), m(198, 34), m(169, 34), m(570, 34), m(359, 34), m(442, 34, 'oran-berry')], 200, 'galactic', ai='good',
         intro='Cyrus: Spirit. Emotion. Strife. I will delete them all and build a world of pure order. You are... noise.',
         lose='Noise... but persistent noise. Remember this mercy; I will not extend it twice.')
-trainer('mars2', 'Mars', 'Galactic Commander', 'commander', [m(436, 41), m(42, 42), m(432, 45, 'sitrus-berry')], 180, 'galactic', ai='good',
+trainer('mars2', 'Mars', 'Galactic Commander', 'commander', [m(436, 41), m(42, 42), m(434, 42), m(198, 43), m(169, 44), m(432, 45, 'sitrus-berry')], 180, 'galactic', ai='good',
         intro='Mars: This is the summit of everything! You don\'t get to ruin it!', lose='No... not when we\'re this close!')
-trainer('jupiter2', 'Jupiter', 'Galactic Commander', 'commander', [m(436, 41), m(42, 42), m(435, 45, 'sitrus-berry')], 180, 'galactic', ai='good',
+trainer('jupiter2', 'Jupiter', 'Galactic Commander', 'commander', [m(436, 41), m(42, 42), m(434, 42), m(559, 43), m(169, 44), m(435, 45, 'sitrus-berry')], 180, 'galactic', ai='good',
         intro='Jupiter: The new world is a hallway away. You stop HERE.', lose='Impossible... Mars, we...')
-trainer('cyrus2', 'Cyrus', 'Galactic Boss', 'boss', [m(229, 45), m(430, 47), m(169, 46), m(130, 46), m(461, 48, 'sitrus-berry')], 250, 'distortion', ai='good',
+trainer('cyrus2', 'Cyrus', 'Galactic Boss', 'boss', [m(229, 45), m(169, 46), m(130, 46), m(442, 46), m(430, 47), m(461, 48, 'sitrus-berry')], 250, 'distortion', ai='good',
         intro='Cyrus: Look at this place - emotion given gravity, spirit given fangs. Giratina\'s world... and proof that mine is necessary. Final obstacle: removed.',
         lose='...I will not yield. But this world... it does not yield either...')
 trainer('looker_ally', 'Looker', 'International Police', 'looker', [m(441, 30)], 80, None, ai='basic')
