@@ -70,8 +70,17 @@
       });
     },
 
+    /* Fires on ENTERING Lake Verity (via the map's onEnter) so it can't be
+       walked around. Idempotent: a no-op once the starter has been received. */
+    verity_enter: function (done) {
+      if (!S.flag('got_starter')) { PKM.SCRIPTS.lake_intro(done); return; }
+      if (S.flag('league_champion') && !PKM.G.dex.caught[481]) { PKM.SCRIPTS.mesprit_event(done); return; }
+      done();
+    },
+
     lake_intro: function (done) {
       var ow = PKM.Overworld;
+      if (S.flag('got_starter')) { done(); return; }          // already done
       if (S.flag('picked_starter')) { afterStarter(done); return; }
       D.say(['{RIVAL}: Took you long enough! Okay... the lake. Something rare is HERE, I know it.',
         'Across the water, a stern voice: "...no further data today. We\'re leaving." An older gentleman and his assistant hurry off up the trail.',
@@ -280,7 +289,7 @@
     },
 
     spear_pillar_event: function (done) {
-      if (PKM.State.flag('spear_done')) { D.say('Wind howls across the empty pillars.', done); return; }
+      if (PKM.State.flag('spear_done')) { done(); return; }   // onEnter no-op once done
       D.say(['At the summit, Team Galactic\'s commanders bar the way.',
         'Mars: The boss is busy remaking reality. We\'ll keep you company until it\'s done!'], function () {
         PKM.Battle.start({
@@ -306,7 +315,7 @@
     },
 
     distortion_finale: function (done) {
-      if (PKM.State.flag('distortion_done')) { D.say('Gravity wanders. The Distortion World remembers everything that happened here.', done); return; }
+      if (PKM.State.flag('distortion_done')) { done(); return; }   // onEnter no-op once done
       D.say(['Cyrus stands on a floating shard, the Red Chain dim in his hand.',
         'Cyrus: This world has no spirit to trouble it. It is perfect. And you will not leave it.'], function () {
         PKM.Battle.start({

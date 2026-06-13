@@ -1,5 +1,5 @@
 PKM.registerMap('verity_lakefront', {
-  "name": "Lake Verity", "theme": "forest", "music": "surf", "encounters": "verity",
+  "name": "Lake Verity", "theme": "forest", "music": "surf", "encounters": "verity", "onEnter": "verity_enter",
   "tiles": [
     "##########################",
     "#,,,,................,,,,#",
@@ -21,8 +21,5 @@ PKM.registerMap('verity_lakefront', {
   "connections": { "right": { "to": "route201", "offset": 0 } },
   "signs": [],
   "npcs": [],
-  "triggers": [
-    { "x": 3, "y": 10, "w": 16, "h": 1, "script": "lake_intro", "unless": "got_starter" },
-    { "x": 3, "y": 11, "w": 16, "h": 1, "script": "mesprit_event", "requires": "league_champion", "unless": "caught_mesprit" }
-  ]
+  "triggers": []
 });

@@ -399,7 +399,8 @@ write_map('galactic_hq', p); count += 1
 
 # Spear Pillar — the confrontation; Mars+Jupiter then Cyrus, Giratina drags you under
 g, p = special('spear_pillar', 'Spear Pillar', 'snow', 'galactic', weather='snow', w=21, h=15)
-p['triggers'] = [{'x': 8, 'y': 10, 'w': 5, 'h': 1, 'script': 'spear_pillar_event', 'once': 'spear_done'}]
+p['onEnter'] = 'spear_pillar_event'   # fires on entry so it can't be walked around
+p['triggers'] = []
 p['signs'] = [{'x': 4, 'y': 12, 'text': 'Ancient pillars ring the summit. The air thrums with the weight of creation.'}]
 write_map('spear_pillar', p); count += 1
 
@@ -407,7 +408,8 @@ write_map('spear_pillar', p); count += 1
 g, p = special('distortion_world', 'Distortion World', 'distortion', 'distortion', w=23, h=17)
 p['encounters'] = 'distortion_world'
 p['caveEncounters'] = True
-p['triggers'] = [{'x': 9, 'y': 3, 'w': 5, 'h': 1, 'script': 'distortion_finale', 'once': 'distortion_done'}]
+p['onEnter'] = 'distortion_finale'   # fires on entry so it can't be walked around
+p['triggers'] = []
 p['signs'] = [{'x': 4, 'y': 14, 'text': 'Up is down, near is far. Giratina watches from everywhere at once.'}]
 write_map('distortion_world', p); count += 1
 
